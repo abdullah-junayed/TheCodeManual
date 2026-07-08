@@ -1,0 +1,13 @@
+site_name: TheCodeManual
+nav:
+  - Home: index.md
+  - VsCodeSetup: ./vscode-setup/index.md
+  - Html Guide: ./html-guide/index.md
+theme:
+  name: material
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
