@@ -2,12 +2,30 @@ site_name: TheCodeManual
 nav:
   - Home: index.md
   - VsCodeSetup: ./vscode-setup/index.md
-  - Html Guide: ./html-guide/index.md
-theme:
+  - Html Guide: 
+    - The Ultimate HTML Guide: ./html-guide/index.md
+    - Introduction & Boilerplate Setup: ./html-guide/setup.md
+    - Text Formatting & Headings: ./html-guide/text-formatting.md
+    - Links and Navigation: ./html-guide/links.md
+    - Images and Media: ./html-guide/media.md
+    - Lists and Tables: ./html-guide/lists-tables.md
+theme: 
   name: material
   palette:
-    primary: 'indigo'
-    accent: 'indigo'
-  font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
+    # Automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preferenceCopied!   
