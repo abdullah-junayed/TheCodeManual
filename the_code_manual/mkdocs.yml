@@ -2,6 +2,9 @@ site_name: TheCodeManual
 nav:
   - Home: index.md
   - VsCodeSetup: ./vscode-setup/index.md
+  - Windows Command Prompt (CMD) Reference Guide: ./windows-cmd-reference-guide/index.md
+  - Linux Command Line Reference Guide: ./linux-command-line-reference-guide/index.md
+  - Nix package manager: ./nix-package-manager/index.md
   - Html Guide: 
     - The Ultimate HTML Guide: ./html-guide/index.md
     - Introduction & Boilerplate Setup: ./html-guide/setup.md
@@ -9,6 +12,9 @@ nav:
     - Links and Navigation: ./html-guide/links.md
     - Images and Media: ./html-guide/media.md
     - Lists and Tables: ./html-guide/lists-tables.md
+    - Forms and Input Elements: ./html-guide/forms.md
+    - Semantic HTML: ./html-guide/semantic-html.md
+    - HTML Meta Tags & SEO Basics: ./html-guide/meta-tags.md
 theme: 
   name: material
   palette:

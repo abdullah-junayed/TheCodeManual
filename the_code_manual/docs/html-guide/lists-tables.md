@@ -379,4 +379,241 @@ Start with the table's `<thead>` first — get the three column headers right wi
 
 ---
 
-**← Previous:** Step 4 — Links and Images &nbsp;·&nbsp; **Next:** Step 6 — Forms and User Input →
+---
+
+# Best Practices
+
+✅ Use **`<ul>`** when the order of items does not matter.
+
+Examples:
+
+- Shopping lists
+- Features
+- Programming languages
+- Favorite books
+
+---
+
+✅ Use **`<ol>`** when the order is important.
+
+Examples:
+
+- Recipes
+- Tutorials
+- Installation steps
+- Rankings
+
+---
+
+✅ Always wrap every list item inside an `<li>` element.
+
+Correct:
+
+```html
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+</ul>
+```
+
+---
+
+✅ Use tables only for displaying data.
+
+Examples:
+
+- Student records
+- Product prices
+- Monthly reports
+- Timetables
+
+Do **not** use tables to build your website layout.
+
+---
+
+✅ Use table headers (`<th>`) whenever possible.
+
+Headers make tables easier to understand for both users and screen readers.
+
+---
+
+✅ Add a `<caption>` for larger or more complex tables.
+
+A caption tells users what the table is about before they start reading it.
+
+---
+
+# Common Beginner Mistakes
+
+### ❌ Using a table for page layout
+
+Wrong:
+
+Using tables to position headers, sidebars, and footers.
+
+Correct:
+
+Use CSS (Flexbox or Grid) for layouts and use tables only for tabular data.
+
+---
+
+### ❌ Forgetting the `<li>` tag
+
+Wrong:
+
+```html
+<ul>
+    HTML
+    CSS
+    JavaScript
+</ul>
+```
+
+Correct:
+
+```html
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+```
+
+---
+
+### ❌ Choosing the wrong list type
+
+Wrong:
+
+Using `<ol>` when the order doesn't matter.
+
+Correct:
+
+Use:
+
+- `<ul>` for unordered items.
+- `<ol>` for ordered steps.
+
+---
+
+### ❌ Forgetting table headers
+
+Wrong:
+
+```html
+<table>
+
+<tr>
+<td>Name</td>
+<td>Age</td>
+</tr>
+
+</table>
+```
+
+Better:
+
+```html
+<table>
+
+<tr>
+<th>Name</th>
+<th>Age</th>
+</tr>
+
+</table>
+```
+
+---
+
+### ❌ Incorrect `rowspan` or `colspan`
+
+When merging cells, remember that the merged cell already occupies space.
+
+Otherwise, your table structure becomes broken.
+
+---
+
+# Quick Summary
+
+| HTML Element | Purpose                            |
+| ------------ | ---------------------------------- |
+| `<ul>`       | Creates an unordered (bullet) list |
+| `<ol>`       | Creates an ordered (numbered) list |
+| `<li>`       | Represents a list item             |
+| `<table>`    | Creates a table                    |
+| `<tr>`       | Creates a table row                |
+| `<th>`       | Creates a table header             |
+| `<td>`       | Creates a table data cell          |
+| `<thead>`    | Groups table header rows           |
+| `<tbody>`    | Groups the main table content      |
+| `<tfoot>`    | Groups footer rows                 |
+| `<caption>`  | Adds a title to a table            |
+| `colspan`    | Merges columns                     |
+| `rowspan`    | Merges rows                        |
+| `scope`      | Improves table accessibility       |
+
+---
+
+# Practice Challenge
+
+Create a webpage that contains:
+
+### A Programming Languages List
+
+Create an unordered list with:
+
+- HTML
+- CSS
+- JavaScript
+- C
+
+---
+
+### A Learning Roadmap
+
+Create an ordered list showing these steps:
+
+1. Learn HTML
+2. Learn CSS
+3. Learn JavaScript
+4. Build Projects
+5. Learn a Backend Language
+
+---
+
+### A Student Marks Table
+
+Create a table with:
+
+| Name  | HTML | CSS | JavaScript |
+| ----- | ---- | --- | ---------- |
+| Alex  | 90   | 85  | 88         |
+| Sarah | 95   | 91  | 94         |
+| John  | 80   | 78  | 82         |
+
+For an extra challenge:
+
+- Add a `<caption>`.
+- Use `<thead>` and `<tbody>`.
+- Use `<th>` for the headers.
+- Try creating a merged cell using `colspan` or `rowspan`.
+
+---
+
+# What's Next?
+
+In the next chapter, you'll learn about **HTML Forms and User Input**, including:
+
+- Creating forms with `<form>`
+- Text fields and password inputs
+- Radio buttons
+- Checkboxes
+- Dropdown menus
+- Textareas
+- Submit and Reset buttons
+- Form validation using HTML attributes
+
+By the end of the next chapter, you'll be able to build contact forms, login pages, registration forms, and other interactive forms that collect user input.
+
+[← Back: Step 4](./media.md) · [Next: Step 6 →](./forms.md)

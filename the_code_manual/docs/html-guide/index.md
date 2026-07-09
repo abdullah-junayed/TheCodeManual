@@ -38,4 +38,6 @@ Follow this step-by-step guide to master HTML from scratch. Click on any topic t
 * [**5th Step:** Lists and Tables](lists-tables.md) - *Organizing data with unordered `<ul>`, ordered `<ol>`, and complex data tables `<table>`.*
 * [**6th Step:** Forms and User Input](forms.md) - *Collecting user data with `<form>`, text inputs, radio buttons, checkboxes, and submit buttons.*
 * [**7th Step:** Semantic HTML](semantic-html.md) - *Writing modern, accessible web pages using `<header>`, `<footer>`, `<main>`, `<article>`, and `<section>`.*
-* [**8th Step:** HTML Meta Tags & SEO Basics](meta-tags.md) - *Communicating with search engines and configuring the viewport for mobile devices.*
+* [**8th Step:** HTML Meta Tags & SEO Basics](meta-tags.md) - *Communicating with search engines and configuring the viewport for mobile devices.* 
+
+[← Back: Home](../index.md) · [Next: Step 1 →](./setup.md)

@@ -11,7 +11,7 @@ Headings are used to create a hierarchy on your web page, just like the table of
 ```html
 <h1>This is the Main Title</h1>
 <h2>This is a Major Section Heading</h2>
-### This is a Sub-section Heading
+<h3>This is a Sub-section Heading</h3>
 <h4>This is a Minor Heading</h4>
 <h5>This is a Very Minor Heading</h5>
 <h6>This is the Smallest Heading</h6>
@@ -87,3 +87,162 @@ Here is what a complete, properly formatted section of a web page looks like whe
 </body>
 </html>
 ```
+
+---
+
+# Best Practices
+
+✅ Use only one `<h1>` on each page.
+
+---
+
+✅ Use headings in order.
+
+```
+h1
+ └── h2
+      └── h3
+```
+
+Avoid skipping heading levels unless there's a good reason.
+
+---
+
+✅ Use `<strong>` instead of `<b>` when the text is important.
+
+---
+
+✅ Use `<em>` instead of `<i>` when emphasizing words or phrases.
+
+---
+
+✅ Use paragraphs for blocks of text instead of inserting multiple `<br>` tags.
+
+---
+
+# Common Beginner Mistakes
+
+### ❌ Using multiple `<h1>` elements unnecessarily
+
+Wrong:
+
+```html
+<h1>Home</h1>
+<h1>About</h1>
+<h1>Contact</h1>
+```
+
+Better:
+
+```html
+<h1>My Website</h1>
+
+<h2>Home</h2>
+
+<h2>About</h2>
+
+<h2>Contact</h2>
+```
+
+---
+
+### ❌ Skipping heading levels
+
+Wrong:
+
+```html
+<h1>Main Title</h1>
+
+<h3>Section</h3>
+```
+
+Better:
+
+```html
+<h1>Main Title</h1>
+
+<h2>Section</h2>
+```
+
+---
+
+### ❌ Using `<br>` to create large spaces
+
+Wrong:
+
+```html
+<p>Hello</p>
+
+<br>
+<br>
+<br>
+
+<p>World</p>
+```
+
+Use paragraphs and CSS for spacing instead.
+
+---
+
+### ❌ Using `<b>` and `<i>` everywhere
+
+Prefer:
+
+```html
+<strong>
+```
+
+and
+
+```html
+<em>
+```
+
+because they provide meaning as well as styling.
+
+---
+
+# Quick Summary
+
+| HTML Element  | Purpose            |
+| ------------- | ------------------ |
+| `<h1>`        | Main page heading  |
+| `<h2>`–`<h6>` | Section headings   |
+| `<p>`         | Paragraph          |
+| `<br>`        | Line break         |
+| `<hr>`        | Horizontal divider |
+| `<strong>`    | Important text     |
+| `<em>`        | Emphasized text    |
+
+---
+
+# Practice Challenge
+
+Create a webpage called **My Favorite Hobby** that contains:
+
+- One `<h1>` heading.
+- Two `<h2>` headings.
+- Three paragraphs.
+- A horizontal rule.
+- At least one `<strong>` element.
+- At least one `<em>` element.
+- A paragraph containing a line break with `<br>`.
+
+Try writing everything yourself before looking back at the examples.
+
+---
+
+# What's Next?
+
+In the next chapter, you'll learn about **Links and Navigation**, including:
+
+- Creating hyperlinks with `<a>`
+- Understanding the `href` attribute
+- Absolute and relative URLs
+- Opening links in a new tab
+- Creating email and phone links
+- Building simple website navigation menus
+
+By the end of the next chapter, you'll be able to connect multiple web pages together and navigate between them just like a real website.
+
+[← Back: Step 1](./setup.md) · [Next: Step 3 →](./links.md)

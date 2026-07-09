@@ -89,3 +89,282 @@ Here is what a complete HTML page looks like when we combine text, an image, an 
 </body>
 </html>
 ```
+
+---
+
+# Best Practices
+
+✅ Always add an `alt` attribute to every image.
+
+Good:
+
+```html
+<img
+    src="cat.jpg"
+    alt="A gray cat sleeping on a sofa">
+```
+
+The `alt` text helps screen readers understand the image and appears if the image cannot be loaded.
+
+---
+
+✅ Use descriptive file names.
+
+Instead of:
+
+```
+image1.jpg
+```
+
+Use:
+
+```
+coding-workspace.jpg
+```
+
+Meaningful file names make your project easier to organize.
+
+---
+
+✅ Organize media files into folders.
+
+Example project structure:
+
+```
+project/
+
+│── index.html
+
+│── images/
+│     ├── logo.png
+│     └── hero.jpg
+
+│── audio/
+│     └── podcast.mp3
+
+│── videos/
+│     └── intro.mp4
+```
+
+Keeping images, audio, and videos in separate folders makes your project much easier to maintain.
+
+---
+
+✅ Always include the `controls` attribute for audio and video.
+
+Without it, users won't be able to play, pause, or adjust the media.
+
+Example:
+
+```html
+<audio controls>
+
+    <source
+        src="music.mp3"
+        type="audio/mpeg">
+
+</audio>
+```
+
+---
+
+✅ Specify the media format using the `type` attribute.
+
+Example:
+
+```html
+<source
+    src="video.mp4"
+    type="video/mp4">
+```
+
+This helps browsers determine whether they can play the file.
+
+---
+
+✅ Resize images with CSS whenever possible.
+
+Although HTML supports the `width` and `height` attributes, you'll learn in the CSS guide that styling images with CSS provides much more flexibility.
+
+---
+
+# Common Beginner Mistakes
+
+### ❌ Forgetting the `alt` attribute
+
+Wrong:
+
+```html
+<img src="dog.jpg">
+```
+
+Correct:
+
+```html
+<img
+    src="dog.jpg"
+    alt="A golden retriever playing in a park">
+```
+
+---
+
+### ❌ Using incorrect file paths
+
+Wrong:
+
+```html
+<img src="photo.png">
+```
+
+If the file is actually inside an `images` folder, the browser won't find it.
+
+Correct:
+
+```html
+<img src="images/photo.png">
+```
+
+---
+
+### ❌ Forgetting the `controls` attribute
+
+Wrong:
+
+```html
+<audio>
+
+    <source src="song.mp3">
+
+</audio>
+```
+
+Users cannot play the audio.
+
+Correct:
+
+```html
+<audio controls>
+
+    <source src="song.mp3">
+
+</audio>
+```
+
+---
+
+### ❌ Forgetting the `<source>` element
+
+Wrong:
+
+```html
+<video controls></video>
+```
+
+Correct:
+
+```html
+<video controls>
+
+    <source
+        src="movie.mp4"
+        type="video/mp4">
+
+</video>
+```
+
+---
+
+### ❌ Using huge image files
+
+Very large images make websites load slowly.
+
+Whenever possible:
+
+- Resize images.
+- Compress images.
+- Use modern image formats like WebP when appropriate.
+
+---
+
+# Quick Summary
+
+| HTML Element | Purpose                                                    |
+| ------------ | ---------------------------------------------------------- |
+| `<img>`      | Displays an image                                          |
+| `src`        | Specifies the image or media file location                 |
+| `alt`        | Describes an image for accessibility                       |
+| `width`      | Sets the media width                                       |
+| `height`     | Sets the media height                                      |
+| `<audio>`    | Embeds audio                                               |
+| `<video>`    | Embeds video                                               |
+| `<source>`   | Specifies the media file                                   |
+| `controls`   | Displays playback controls                                 |
+| `autoplay`   | Starts playback automatically (browser restrictions apply) |
+| `muted`      | Starts media with the sound turned off                     |
+| `loop`       | Repeats the media continuously                             |
+
+---
+
+# Practice Challenge
+
+Create a webpage called **My Multimedia Gallery** that contains:
+
+### A Heading
+
+Add a title for your gallery.
+
+---
+
+### An Image
+
+Display an image with:
+
+- `src`
+- `alt`
+- `width`
+
+---
+
+### An Audio Player
+
+Add an audio player using:
+
+- `<audio>`
+- `<source>`
+- `controls`
+
+---
+
+### A Video Player
+
+Add a video player using:
+
+- `<video>`
+- `<source>`
+- `controls`
+- `width`
+
+---
+
+### Extra Challenge
+
+Create an `images`, `audio`, and `videos` folder inside your project and organize your files just like a real website.
+
+---
+
+# What's Next?
+
+In the next chapter, you'll learn about **HTML Lists and Tables**, including:
+
+- Creating unordered lists with `<ul>`
+- Creating ordered lists with `<ol>`
+- Adding list items with `<li>`
+- Building tables using `<table>`
+- Creating rows with `<tr>`
+- Adding table headers with `<th>`
+- Adding table data with `<td>`
+- Organizing complex tables using `<thead>`, `<tbody>`, and `<tfoot>`
+
+By the end of the next chapter, you'll be able to organize information into clean, structured lists and professional-looking data tables.
+
+[← Back: Step 3](./links.md) · [Next: Step 5 →](./lists-tables.md)

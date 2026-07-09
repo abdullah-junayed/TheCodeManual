@@ -1,51 +1,496 @@
 # Step 1: Introduction & Boilerplate Setup
 
-Welcome to your very first step in web development! Every single website on the internet—from a simple blog to massive platforms like YouTube—starts with a basic structural foundation. In HTML, we call this foundation the **boilerplate**.
+Welcome to **TheCodeManual**, a complete developer learning guide designed to help you understand web development and programming from the foundation level.
 
-Think of the boilerplate as the skeleton of your web page. It is the minimum amount of code required for a web browser (like Chrome or Safari) to understand and display your site correctly.
+Before creating websites with HTML, CSS, and JavaScript, every developer needs to understand the basic structure of an HTML document. This structure is called the **HTML Boilerplate**.
 
-## The Standard HTML5 Boilerplate
+An HTML boilerplate is a standard starting template that provides the necessary foundation for every webpage.
 
-Here is the standard HTML boilerplate you will use for almost every project. 
+---
 
-> **Pro Tip:** In VS Code, you don't have to type this out manually every time. You can generate this exact code instantly by opening a new `.html` file, typing `!` (an exclamation point), and pressing `Enter` or `Tab`.
+# What is HTML?
+
+**HTML (HyperText Markup Language)** is the standard language used to create the structure of websites.
+
+HTML defines the different parts of a webpage, such as:
+
+* Headings
+* Paragraphs
+* Images
+* Links
+* Forms
+* Buttons
+* Tables
+* Website sections
+
+HTML is not a programming language. It is a **markup language** because it uses tags to describe the structure and meaning of content.
+
+Example:
+
+```html
+<h1>Welcome to TheCodeManual</h1>
+<p>Learn web development step by step.</p>
+```
+
+In this example:
+
+* `<h1>` creates a main heading.
+* `<p>` creates a paragraph.
+
+---
+
+# Creating Your First HTML File
+
+Before writing HTML code, create a file called:
+
+```
+index.html
+```
+
+The `index.html` file is usually the main entry point of a website.
+
+Most web servers automatically look for this file when opening a website.
+
+---
+
+# HTML Boilerplate Structure
+
+Every modern HTML document starts with a basic structure:
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Page</title>
+    <title>TheCodeManual</title>
 </head>
+
 <body>
 
-    <h1>Hello, World!</h1>
+    <h1>Hello, Developer!</h1>
+    <p>Welcome to TheCodeManual.</p>
 
 </body>
+
 </html>
 ```
 
-## Breaking Down the Code
+Let's understand each part.
 
-When you look at this code for the first time, it might look like a lot of jargon. Let's break down exactly what each piece does, line by line.
+---
 
-### `<!DOCTYPE html>` (The Declaration)
-This must always be the very first line of your document. It is not technically an HTML tag; it is a document type declaration. It simply tells the web browser, "Hey, expect this document to be written in modern HTML5." Without it, older browsers might try to render your page using outdated, broken standards.
+# 1. Understanding `<!DOCTYPE html>`
 
-### `<html>` (The Root Element)
-This tag wraps around all the code on your entire page. It is known as the root element because everything else branches out from it.
+The first line of an HTML document is:
 
-* **Notice the `lang="en"` attribute:** This tells search engines and screen readers that the main language of the page is English. This is incredibly important for both SEO (Search Engine Optimization) and making your site accessible to visually impaired users.
+```html
+<!DOCTYPE html>
+```
 
-### `<head>` (The Brain)
-The `<head>` section contains metadata—data about the data. Nothing inside the `<head>` tag is visible on the actual web page. Instead, it holds behind-the-scenes instructions for the browser:
+This is called the **DOCTYPE declaration**.
 
-* **`<meta charset="UTF-8">`**: Ensures your page can safely display all standard text characters, numbers, and symbols (including emojis) without turning into unreadable gibberish.
-* **`<meta name="viewport" content="width=device-width, initial-scale=1.0">`**: This line is strictly for mobile responsiveness. It ensures your website scales correctly to fit the screen of a phone or tablet.
-* **`<title>`**: This sets the text that appears at the very top of your browser tab (e.g., "My First Web Page"). It is also the main clickable headline that shows up when someone finds your site on Google.
+## Purpose
 
-### `<body>` (The Canvas)
-The `<body>` tag is where the fun begins. Everything you want your users to actually see must be placed inside the opening `<body>` and closing `</body>` tags. 
+It tells the browser:
 
-Whether it is a heading (`<h1>`), a paragraph, an image, a video, or a complex layout, if it belongs on the screen, it belongs in the body.
+> "This document uses HTML5."
+
+Browsers need this information to correctly display the webpage.
+
+Without it, browsers may enter **quirks mode**, where they try to support older HTML behavior, which can cause unexpected layout problems.
+
+Example:
+
+```html
+<!DOCTYPE html>
+```
+
+Important points:
+
+* It is not an HTML tag.
+* It does not create visible content.
+* It must appear at the very top of the document.
+* It is not case-sensitive.
+
+Correct:
+
+```html
+<!DOCTYPE html>
+```
+
+Also works:
+
+```html
+<!doctype html>
+```
+
+---
+
+# 2. Understanding `<html>` Tag
+
+The `<html>` element is the root element of every HTML document.
+
+Example:
+
+```html
+<html>
+</html>
+```
+
+Everything inside an HTML page exists inside this tag.
+
+Structure:
+
+```html
+<html>
+
+    Everything on the webpage goes here.
+
+</html>
+```
+
+The `<html>` element contains two main sections:
+
+1. `<head>`
+2. `<body>`
+
+Example:
+
+```html
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
+```
+
+---
+
+# The `lang` Attribute
+
+The `<html>` tag usually contains a `lang` attribute.
+
+Example:
+
+```html
+<html lang="en">
+```
+
+The `lang` attribute tells browsers and search engines what language the webpage uses.
+
+Common examples:
+
+English:
+
+```html
+<html lang="en">
+```
+
+Bangla:
+
+```html
+<html lang="bn">
+```
+
+Spanish:
+
+```html
+<html lang="es">
+```
+
+Benefits:
+
+* Improves SEO
+* Helps screen readers
+* Improves accessibility
+* Helps browsers understand content language
+
+---
+
+# 3. Understanding `<head>` Section
+
+The `<head>` section contains information about the webpage that is not directly visible to users.
+
+Example:
+
+```html
+<head>
+
+    <title>TheCodeManual</title>
+
+</head>
+```
+
+The browser uses the information inside `<head>` to understand how the page should work.
+
+Common elements inside `<head>`:
+
+## Title
+
+```html
+<title>TheCodeManual</title>
+```
+
+The title appears:
+
+* In the browser tab
+* In search engine results
+
+Example:
+
+```
+Browser Tab:
+TheCodeManual
+```
+
+---
+
+## Character Encoding
+
+```html
+<meta charset="UTF-8">
+```
+
+This tells the browser how to read characters.
+
+UTF-8 supports:
+
+* English
+* Bangla
+* Arabic
+* Chinese
+* Emojis
+* Most writing systems
+
+Example:
+
+```html
+<meta charset="UTF-8">
+```
+
+---
+
+## Viewport Settings
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+This makes websites responsive on mobile devices.
+
+Explanation:
+
+`width=device-width`
+
+Means:
+
+> Use the device's screen width.
+
+`initial-scale=1.0`
+
+Means:
+
+> Start with normal zoom level.
+
+Without this, websites may look incorrect on phones.
+
+---
+
+# 4. Understanding `<body>` Section
+
+The `<body>` contains everything users can see on a webpage.
+
+Examples:
+
+* Text
+* Images
+* Videos
+* Buttons
+* Forms
+* Navigation menus
+
+Example:
+
+```html
+<body>
+
+<h1>TheCodeManual</h1>
+
+<p>Learn coding from zero.</p>
+
+<button>Start Learning</button>
+
+</body>
+```
+
+The browser displays this content on the page.
+
+---
+
+# Complete HTML Boilerplate Explained
+
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TheCodeManual</title>
+
+</head>
+
+
+<body>
+
+    <h1>Welcome to TheCodeManual</h1>
+
+    <p>Your programming journey starts here.</p>
+
+</body>
+
+
+</html>
+```
+
+Flow:
+
+```
+DOCTYPE
+   |
+   ↓
+HTML
+   |
+   ├── HEAD
+   |     |
+   |     ├── Title
+   |     ├── Meta Information
+   |
+   |
+   └── BODY
+         |
+         ├── Text
+         ├── Images
+         ├── Buttons
+         └── Website Content
+```
+
+---
+
+# VS Code Setup for HTML Development
+
+To write HTML professionally, we will use **Visual Studio Code**.
+
+Recommended extensions:
+
+## Live Server
+
+Purpose:
+
+* Runs your webpage instantly
+* Automatically refreshes changes
+
+## Prettier
+
+Purpose:
+
+* Automatically formats your code
+* Keeps your code clean
+
+## Auto Rename Tag
+
+Purpose:
+
+Automatically updates closing tags.
+
+Example:
+
+Change:
+
+```html
+<h1>Hello</h1>
+```
+
+to:
+
+```html
+<h2>Hello</h2>
+```
+
+The closing tag updates automatically:
+
+```html
+<h2>Hello</h2>
+```
+
+---
+
+# Your First Practice Task
+
+Create a file:
+
+```
+index.html
+```
+
+Write:
+
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>My First Website</title>
+
+</head>
+
+<body>
+
+<h1>I am learning HTML</h1>
+
+<p>This is my first webpage.</p>
+
+</body>
+
+</html>
+```
+
+Open it in your browser.
+
+Congratulations! 🎉
+
+You have created your first webpage.
+
+---
+
+# Key Takeaways
+
+After completing this step, you should understand:
+
+✅ What HTML is
+✅ Why `<!DOCTYPE html>` is required
+✅ The purpose of `<html>`
+✅ How the `lang` attribute works
+✅ The difference between `<head>` and `<body>`
+✅ How to create a basic HTML file
+✅ How to prepare VS Code for development
+
+Next Step:
+
+**Step 2: HTML Elements, Tags, Attributes, and Text Formatting**
+
+[← Back: The Ultimate HTML Guide](./index.md) · [Next: Step 2 →](./text-formatting.md)
