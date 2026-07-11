@@ -5,7 +5,7 @@ nav:
   - Windows Command Prompt (CMD) Reference Guide: ./windows-cmd-reference-guide/index.md
   - Linux Command Line Reference Guide: ./linux-command-line-reference-guide/index.md
   - Nix package manager: ./nix-package-manager/index.md
-  - Html Guide: 
+  - HTML5: 
     - The Ultimate HTML Guide: ./html-guide/index.md
     - Introduction & Boilerplate Setup: ./html-guide/setup.md
     - Text Formatting & Headings: ./html-guide/text-formatting.md
@@ -15,6 +15,11 @@ nav:
     - Forms and Input Elements: ./html-guide/forms.md
     - Semantic HTML: ./html-guide/semantic-html.md
     - HTML Meta Tags & SEO Basics: ./html-guide/meta-tags.md
+  - CSS3: 
+    - The Ultimate CSS3 Guide: ./css-guide/index.md
+    - CSS Syntax: ./css-guide/css-syntax.md
+    - CSS Selectors: ./css-guide/css-selectors.md
+
 theme: 
   name: material
   palette:
